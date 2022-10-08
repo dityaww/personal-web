@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/* start navbar */
+nav{
+    background-color: #8a3ffc;
+}
+
+.container{
+    display: flex;
+    padding: 30px 150px;
+    /* background-color: red; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .name h1{
+    color: white;
+    font-weight: 900;
+}
+
+nav .menu ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav .menu a{
+    text-decoration: none;
+    color: white;
+}
+
+nav .menu a:hover{
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+/* end navbar */
+
+/* ============================================================= */
+
+/* start header */
+header{
+    /* background-color: black; */
+    color: white;
+}
+
+.row{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    /* position: relative; */
+}
+
+.desc{
+    /* background-color: yellowgreen; */
+    flex-basis: 50%;
+    color: black;
+    padding-top: 10rem;
+}
+
+.desc h1{
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.desc h3{
+    padding: 10px 0px;
+    font-size: 23px;
+}
+
+.desc p{
+    font-size: 18px;
+}
+
+.desc ul {
+    list-style: none;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    gap: 15px;
+    padding-top: 15px;
+}
+
+.desc ul li a{
+    color: gray;
+}
+
+.desc ul li .insta:hover{
+    color: #bc2a8d;
+}
+.desc ul li .github:hover{
+    color: black;
+}
+.desc ul li .linkedin:hover{
+    color: #0072b1;
+}
+
+.image{
+    /* background-color: rebeccapurple; */
+    flex-basis: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.image img{
+    position: absolute;
+    left: 120px;
+    bottom: 130px;
+    z-index: 20;
+    filter: drop-shadow(0px 0px 1rem #444444);
+    /* background-color: blue; */
+}
+
+.image svg{
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    left: 80px;
+    top: 40px;
+    width: 35rem;
+}
+/* end header */
+
+/* section */
+section{
+    /* height: 100vh; */
+    /* background-color: #d3d3d3; */
+    margin-bottom: 10rem;
+}
+
+section .container{
+    display: block;
+}
+
+section .title{
+    display: flex;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    color: #9c51e0;
+}
+
+.about .aboutlink{
+    text-decoration: none;
+    color: #9f61d9;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.about .aboutlink:hover{
+    color: #7513d1;
+}
+
+.about p{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+section .blog{
+    /* background-color: #8a3ffc; */
+    padding: 30px 20px;
+    border-bottom: 3px solid #eee;
+}
+
+section .blog:hover{
+    background-color: #eee;
+}
+
+section .blog p{
+    padding-top: 5px;
+    color: #808080;
+}
+
+.project .content{
+    /* background-color: red; */
+    width: 100%;
+    /* height: 50vh; */
+    display: flex;
+    gap: 20px;
+    /* padding: 20px; */
+    flex-wrap: wrap;
+}
+
+.content .kotak{
+    background-color: #eee;
+    /* margin: 20px 0px; */
+    width: 20%;
+}
+
+.kotak a{
+    text-decoration: none;
+    color: #9f61d9;
+}
+
+.kotak a:hover{
+    color: #7513d1;
+}
+
+.kotak p ,.kotak h3, .kotak a, .tech{
+    padding: 0px 20px;
+}
+
+.kotak p{
+    padding-top: 20px;
+    font-size: 14px;
+    color: #2C3E50;
+}
+
+.kotak h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.kotak .tech{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.tech .use{
+    background-color: #e5e7e9;
+    padding: 5px;
+    color: #2c3e50;
+}
+
+/* end section */
+
+/* start footer */
+footer{
+    background-color:#eee;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    /* color: white; */
+}
+/* end footer */
+
+
+
+/* halaman about.html */
+.education{
+    list-style: none;
+}
+
+.education li{
+    padding-top: 5px;
+}
+
+.education li i{
+    padding-right: 7px;
+}
+
+.skill{
+    /* background-color: red; */
+    width: 40%;
+}
+
+.skill ul{
+    list-style: none;
+    font-size: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* blog.html */
+.myartikel .paragraf1::first-letter{
+    color: black;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-right: 6px;
+    float: left;
+}
+
+.myartikel .paragraf{
+    padding-top: 20px;
+}
